@@ -76,7 +76,7 @@ footer {
 <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
   
 <header>
-  <h2 id = "ActivateAsia">Asia</h2><button type="button"onclick="document.getElementById('ActivateAsia').innerHTML = A = addA(A,lengthA)">Click Me!</button>
+  <h2 id = "ActivateAsia">Asia</h2><button type="button"onclick="document.getElementById('ActivateAsia').innerHTML = A = addAorL(A,lengthA)">Click Me!</button>
 </header>
 
 <section>
@@ -90,23 +90,21 @@ footer {
   
 <article>
   <h1 id = "ActivateLondon" >London</h1>
-<button type="button" onclick="document.getElementById('ActivateLondon').innerHTML = L = addAnL(A,lengthL,L)">Click Me!</button>
+<button type="button" onclick="document.getElementById('ActivateLondon').innerHTML = L = addAorL(A,lengthL,L)">Click Me!</button>
 
 <script>
 let Asialength = document.getElementById("ActivateAsia").textContent;
 let lengthA = Asialength.length;
 let A = 0;
-function addA(A,lengthA){
+function addAorL(A,lengthA){
   return A = A+lengthA
+  return L = lengthL + A
 }
     
 let Londonlength = document.getElementById("ActivateLondon").textContent;
 let lengthL = Londonlength.length;
 let L = 0;
-function addAnL(A,lengthL,L){
-  return L = lengthL + A
-}
-    
+
 </script>
     
 
