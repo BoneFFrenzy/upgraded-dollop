@@ -142,15 +142,16 @@ footer {
       
   }
       
-  let counter_serial = JSON.stringify(counter);
-  let asiacount_serial = JSON.stringify(asiacounter);
-  let londoncount_serial = JSON.stringify(londoncounter);
-      
-  localStorage.setItem("counters","counter_serial","asiacount_serial","londoncount_serial");
-      
-  let counter_deserial = JSON.parse(counter);
-  let asiacount_deserial = JSON.parse(asiacounter);
-  let londoncount_deserial = JSON.parse(londoncounter);
+  localStorage.setItem("storecounter", counter);
+localStorage.setItem("storeasia", asiacounter);
+localStorage.setItem("storelondon", londoncounter);
+
+document.getElementById("activatecounter").innerHTML = "counter: " + localStorage.getItem("storecounter");
+
+document.getElementById("activateasia").innerHTML = "asia" + localStorage.getItem("storeasia");
+
+document.getElementById("activatelondon").innerHTML = "london " + localStorage.getItem("storelondon");
+
       
   </script>
 
